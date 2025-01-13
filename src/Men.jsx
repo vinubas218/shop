@@ -1,14 +1,17 @@
 import React from 'react'
 import './Men.css'
+import one from './img/one.jpg'
+import five from './img/five.jpg'
+import six from './img/six.jpg'
 
 const Men = () => {
 
   const image = [
-    '/img/one.jpg',
+    one,
 
 
-    '/img/five.jpg',
-    '/img/six.jpg',
+    five,
+    six,
 
   ];
   const cont = [

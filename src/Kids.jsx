@@ -1,13 +1,15 @@
 import React from 'react'
 import './Kids.css'
-
+import k1 from './img/k1.jpg' 
+import k3 from './img/k3.jpg' 
+import k5 from './img/k5.jpg' 
 const Kids = () => {
     const kidsimg = [
-        './img/k1.jpg',
+        k1,
     
-        './img/k3.jpg',
+        k3,
     
-        './img/k5.jpg',
+     k5
     
       ];
       const kidscont = [

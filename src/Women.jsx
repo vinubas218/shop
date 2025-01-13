@@ -1,11 +1,15 @@
 import React from 'react'
 import './Women.css'
+import ow from './img/ow.jpg'
+import tw from './img/tw.jpg'
+import thw from './img/thw.jpg'
+
 
 const Women = () => {
     const imgWomen = [
-        './img/ow.jpg',
-        './img/tw.jpg',
-        './img/thw.jpg',
+        ow,
+       tw,
+      thw,
     
       ];
       const contWomen = [

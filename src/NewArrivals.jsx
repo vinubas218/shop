@@ -1,11 +1,14 @@
 import React from 'react'
 import './NewArrivals.css'
+import n1 from './img/n1.jpg'
+import n2 from './img/n2.jpg'
+import n3 from './img/n3.jpg'
 
 const NewArrivals = () => {
     const newimg = [
-        './img/n1.jpg',
-        './img/n2.jpg',
-        './img/n3.jpg',
+        n1,
+        n2,
+        n3,
     
       ];
       const newCont = [

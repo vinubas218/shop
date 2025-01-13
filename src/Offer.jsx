@@ -1,11 +1,13 @@
 import React from 'react'
 import './Offer.css'
-
+import n4 from './img/n4.jpg'
+import n5 from './img/n5.jpg'
+import n6 from './img/n6.jpg'
 const Offer = () => {
   const offer = [
-    './img/n4.jpg',
-    './img/n5.jpg',
-    './img/n6.jpg',
+    n4,
+   n5,
+    n6
   ];
 
   const offerCont = [
