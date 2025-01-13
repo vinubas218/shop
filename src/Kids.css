@@ -1,0 +1,33 @@
+.sec-top {
+    background-color: #888888;
+    padding: 20px;
+  }
+  
+  .ins-hd{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 20px;
+    padding-left: 90px;
+  }
+  
+  .center-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .men{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 25px;
+  
+  }
+
+  .men1 {
+  
+    /* max-width: 300px;   */
+    max-height: 350px;
+    
+  }
+  
