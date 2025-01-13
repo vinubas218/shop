@@ -1,11 +1,20 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+// import { defineConfig } from 'vite'
+// import react from '@vitejs/plugin-react'
 
 
-export default {
+// export default {
+//   plugins: [react()],
+//   build: {
+//     outDir: 'dist', // Ensure this is set correctly
+//   },
+// };
+
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist', // Ensure this is set correctly
+    outDir: "build",
   },
-};
-
+});
