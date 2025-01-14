@@ -21,7 +21,7 @@ const Kids = () => {
     
       ];
   return (
-    <div>
+    <div id='kids'>
       <div className='sec-top'>
           <p className='ins-hd'>Kids </p>
         </div>

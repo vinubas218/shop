@@ -19,7 +19,7 @@ const Women = () => {
     
       ];
   return (
-    <div>
+    <div id='women'>
       <div className='sec-top'>
           <p className='ins-hd'>Women </p>
         </div>

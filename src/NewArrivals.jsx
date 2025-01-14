@@ -18,7 +18,7 @@ const NewArrivals = () => {
     
       ];
   return (
-    <div>
+    <div id='newArrivals'>
       <div className='sec-top'>
         <p className='ins-hd'>New Arrivals</p>
       </div>

@@ -4,6 +4,12 @@
     padding: 30px;
     justify-content: space-between;
     box-shadow:0.5px 0.5px #888888;
+    /* position: fixed;
+    width: 100%;
+margin: 0 10px;
+z-index: 1000;
+top: 0;
+right: 0; */
   }
   
   .heading {
@@ -22,6 +28,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     gap: 40px;
     flex-wrap: wrap;
+    
   }
   
   .head-items :hover {

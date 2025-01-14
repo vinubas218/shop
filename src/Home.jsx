@@ -4,7 +4,7 @@ import homeImg from './img/fi.jpg'
 
 const Home = () => {
   return (
-    <div>
+    <div id='home'>
       <div className='home'>
         <div className='home-content'>
           <p className='p1'>Welcome to The Dress Affair

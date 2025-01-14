@@ -16,7 +16,7 @@ const Offer = () => {
     'SKY FAB Women Printed Flared Anarkali Kurta with Pant and Dupatta ₹799',
   ];
   return (
-    <div>
+    <div id='offers'>
       <div className='sec-top'>
         <p className='ins-hd'>Offers</p>
       </div>
