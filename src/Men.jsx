@@ -8,14 +8,21 @@ import { BsCart2 } from "react-icons/bs";
 
 
 const Men = () => {
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState(() => {
+    const storedCart = localStorage.getItem("Cart");
+    return storedCart ? JSON.parse(storedCart) : [];
+  });
+
+  
 
   const addCart = (item) => {
-    const itemExists = cart.some((cartItem) => cartItem.id === item.id)
+    const itemExists = cart.some((cartItem) => cartItem.id === item.id) //This checks if the item is already in the cart using its id.
     if (!itemExists) {
-      setCart([...cart, item])
+      const addedItems = [...cart, item]
+      setCart(addedItems)
+      localStorage.setItem("Cart", JSON.stringify(addedItems))
     }
-   
+    
   }
 
   const items = [
@@ -37,7 +44,7 @@ const Men = () => {
         {
           items.map((item, index) => (
             <div key={item.id} className='center-cnt'>
-              <img src={item.img} className='men1' key={index} />
+              <img src={item.img} className='men1' />
 
               <p className='item-men'>{item.description}</p>
               <p className='crt' onClick={() => addCart(item)}>Add to Cart</p>

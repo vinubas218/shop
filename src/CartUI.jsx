@@ -1,11 +1,17 @@
-import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useState, useEffect } from "react"
 import {Link} from 'react-router-dom'
 
 const CartUI = () => {
-  const location = useLocation();
-  const { cart } = location.state || { cart: [] }; 
-  const [count, setCount] = useState([0,0,0])
+  const [cart, setCart] = useState(() => {
+    const storedCart = localStorage.getItem("Cart");
+    return storedCart ? JSON.parse(storedCart) : [];
+  });
+  const [count, setCount] = useState(() => Array(cart.length).fill(0));
+
+  useEffect(() => {
+    localStorage.setItem("Cart", JSON.stringify(cart));
+    setCount((prevCount) => Array(cart.length).fill(0));
+  }, [cart]);
 
   const addOne = (index) => {
     setCount((prevCount) => {
@@ -27,6 +33,7 @@ const CartUI = () => {
 
   const removeItem = (itemId) => {
     const updCart = cart.filter((item) => itemId !== item.id)
+    setCart(updCart)
     
   }
 
