@@ -1,18 +1,35 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import './Register.css'
 
 const Register = () => {
   return (
-    <div>
-      <div>
-        <input type="text" placeholder='Name' />
-        <input type="text" placeholder='Email' />
-        <input type="text" placeholder='Password' />
-        <input type="text" placeholder='Confirm Password' />
+    <div className='signin'>
+      <form action="" className='forms'>
+      <p className='sign'>Register</p>
+      <div className='inputs'>
+        <input type="text" placeholder='Username' className='inp'/>
+        
       </div>
-      <div>
-      <Link to={'/Signin'}>Sign in</Link>
+      <div className='inputs'>
+      <input type="text" placeholder='Email' className='inp'/>
+        
       </div>
+      <div className='inputs'>
+      <input type="text" placeholder='Password' className='inp'/>
+      
+      </div>
+      <div className='inputs'>
+      <input type="text" placeholder='Confirm Password' className='inp'/>
+      </div>
+      <div className='check'>
+                    <input type="checkbox" />
+                    <p className='rem'>I agree with the term of services.</p>
+                </div>
+      <div className='button'>
+      <Link to={'/Signin'} className='btn'>Sign in</Link>
+      </div>
+      </form>
     </div>
   )
 }

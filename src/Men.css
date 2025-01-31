@@ -6,21 +6,22 @@
 
   .men{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     padding: 25px;
   
   }
+  
 
   .item-men{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
-  .men1 {
-  
-    /* max-width: 300px;   */
-    max-height: 350px;
-    
+  .item-men1 {
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   }
 
   .crt {
@@ -29,6 +30,8 @@
     gap: 20px;
   cursor: pointer;
   }
+
+  
 
   .men div{
     border: 1px solid #888888;
@@ -46,6 +49,8 @@
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    /* position: fixed;
+    width: 100%; */
   }
   
   .ins-hd{
@@ -55,3 +60,110 @@
     padding-left: 90px;
   }
   
+
+.cart-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 50px; 
+  width: 280px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  
+}
+
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.cart-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+ 
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+}
+
+.disply {
+  position: relative; /* Ensure the cart dropdown aligns with the cart icon */
+  cursor: pointer;
+  text-decoration: none;
+  padding-right: 110px;
+  font-size: 23px;
+}
+
+.cart-len {
+  position: absolute;
+  left: 15px;
+  top: 1px;
+  font-size: 15px;
+  background-color: goldenrod ;
+  padding: 1px;
+ height: 18px;
+ width: 10px;
+ border-radius: 10px;
+}
+
+/* .disply:hover {
+  color: #0c0c0c;
+} */
+
+@media (max-width: 768px) {
+  #men .men {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #men .center-cnt {
+    flex: 1 1 100%; /* Each item takes up the full width */
+  }
+}
+
+.quantity {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-sub {
+ border: 1px solid rgb(10, 10, 10);
+background-color: #eceaea;
+color: black;
+text-align: center;
+  padding: 3px;
+  cursor: pointer;
+  
+}
+
+.lik {
+  text-decoration: none;
+  color: black;
+  
+}
+
+.item {
+  gap: 5px;
+}
+
+.del-btn {
+  font-size: 26px;
+  cursor: pointer;
+}

@@ -1,30 +1,31 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import './Signin.css';
 
 const Signin = () => {
     return (
-        <div>
-            <form action="">
-                <p>Sign in</p>
-                <div>
+        <div className='signin'>
+            <form action="" className='form'>
+                <p className='sign'>Sign in</p>
+                <div className='inputs'>
 
-                    <input type="email" placeholder='Email' />
+                    <input type="email" placeholder='Email' className='inp'/>
 
                 </div>
-                <div>
+                <div className='inputs'>
 
-                    <input type="text" placeholder='Password' />
+                    <input type="text" placeholder='Password' className='inp'/>
                 </div>
-                <div>
+                <div className='check'>
                     <input type="checkbox" />
-                    <p>Remember me</p>
+                    <p className='rem'>Remember me</p>
                 </div>
-                <div>
+                <div className='reg'>
                     <p>New?</p>
-                    <Link to ={'/Register'}>Register</Link>
+                    <Link to ={'/Register'} className='link'>Register</Link>
                 </div>
-                <div>
-                    <Link to={'/Home'}>Sign in</Link>
+                <div className='button'>
+                    <Link to={'/Home'} className='btn'>Sign in</Link>
                 </div>
 
             </form>

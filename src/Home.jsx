@@ -1,11 +1,16 @@
 import React from 'react'
 import './Home.css'
 import homeImg from './img/fi.jpg'
-import Contact from './Contact';
-import Table from './Table';
 import { Link } from 'react-router-dom'
 
 const Home = () => {
+  const scrollToContact = () => {
+    const contactSect = document.getElementById('contact-section');
+    if (contactSect) {
+      contactSect.scrollIntoView({behavior: 'smooth' })
+    }
+  };
+
   return (
     <div id='home'>
 
@@ -13,15 +18,16 @@ const Home = () => {
         <p className='heading'>The Dress Affair</p>
         <div>
           <nav className='head-items'>
-            <Link to="/Men">Men</Link>
-            <Link to="/Women">Women</Link>
-            <Link to="/Kids">Kids</Link>
+            <Link to="/Men" className='links'>Men</Link>
+            <Link to="/Women" className='links'>Women</Link>
+            <Link to="/Kids" className='links'>Kids</Link>
+            <p className='links' id='contact' onClick={() => scrollToContact()}>Contact</p>
+
           </nav>
         </div>
-        <div className='head-items'>
-          <Link to={'/Signin'}>Signin</Link>
-          <Link to={'/Register'}>Register</Link>
-
+        <div className='head-item'>
+          <Link to={'/Signin'} className='lnks'>Signin</Link>
+         
         </div>
       </div>
       <div className='home'>
@@ -39,11 +45,19 @@ const Home = () => {
         </div>
 
       </div>
+      <div className='contact' id="contact-section">
+        <p className='hed'>Contact</p>
+        <div className='inp-its'> 
+        <input type="text" placeholder='Name' className='ipt'/>
+        <input type="text" placeholder='Email' className='ipt'/>
+        <textarea className="message-box" placeholder='Type your message...'></textarea>
+        <button className='submit-button'>Submit</button>
+        </div>
+      </div>
       
-
-      <Table></Table>
-
-      <Contact></Contact>
+    <div className='foot'>
+      <p>Copyright &copy; 2025</p>
+    </div>
     </div>
   )
 }
