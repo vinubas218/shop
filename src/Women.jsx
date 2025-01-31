@@ -144,7 +144,7 @@ const Women = () => {
               cart.length > 0 ? (
                 cart.map((item, index) => (
                   <div key={index} className='cart-item'>
-                    <img src={item.img} alt="" className='cart-imgwomen' />
+                    <img src={item.img}  className='cart-imgwomen' />
                     <div>
                       <p className='item-men'>{item.description}</p>
                       <p className='item-men'>{item.cost}</p>
@@ -171,9 +171,7 @@ const Women = () => {
           </div>
         )
       }
-      <div>
-
-      </div>
+      
 
       <div className='men'>
         {

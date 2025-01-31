@@ -25,7 +25,7 @@ const Kids = () => {
   }
 
   const addCart = (item) => {
-    const itemExists = cart.some((itemId) => itemId === item.id)
+    const itemExists = cart.some((itemId) => itemId.id === item.id)
     if (!itemExists) {
       const updCart = [...cart, item];
       setCart(updCart);
@@ -131,7 +131,7 @@ const Kids = () => {
       <div className='sec-top'>
         <p className='ins-hd'>Kids </p>
         <div className='disply' onClick={toggleCart}>
-          <p> <BsCart2 /></p>
+         <BsCart2 />
           <span className='cart-len'>{cart.length}</span>
         </div>
       </div>
@@ -152,7 +152,7 @@ const Kids = () => {
                         <p onClick={() => subOne(index)} className='add-sub'>-</p>
                         <p className='add-sub'>{count[index]}</p>
                         <p onClick={() => addOne(index)} className='add-sub'>+</p>
-                        <Link to={'/Signin'} className='lik'>BUY</Link>
+                        <Link to={'/signin'} className='lik'>BUY</Link>
                         <div className='del-btn'>
                           <p onClick={() => delButton(item.id)}> <RiDeleteBin6Line /></p>
                         </div>

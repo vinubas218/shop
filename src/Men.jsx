@@ -13,8 +13,7 @@ import { Link } from 'react-router-dom'
 import { BsCart2 } from "react-icons/bs";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import { IoAdd } from "react-icons/io5";
-import { GrFormSubtract } from "react-icons/gr";
+
 
 
 const Men = () => {
@@ -172,13 +171,9 @@ const Men = () => {
                       <p className='item-men'>{item.cost}</p>
 
                       <div className='quantity'>
-                        <p onClick={() => subOne(index)} className='add-sub'>
-                        <GrFormSubtract />
-                        </p>
+                        <p onClick={() => subOne(index)} className='add-sub'>- </p>
                         <p className='add-sub'>{count[index]}</p>
-                        <p onClick={() => addOne(index)} className='add-sub'>
-                        <IoAdd />
-                        </p>
+                        <p onClick={() => addOne(index)} className='add-sub'>+</p>
                         <Link to={'/Signin'} className='lik'>BUY</Link>
                         <div className='del-btn'>
                           <p onClick={() => removeItem(item.id)}>
