@@ -7,7 +7,7 @@ import Women from './Women'
 import Home from './Home'
 import Signin from './Signin ';
 import Register from './Register'
-import CartUI from './CartUI';
+
 
 
 const App = () => {
@@ -22,7 +22,6 @@ const App = () => {
           <Route path='/men' element = {<Men/>}/>
           <Route path='/women' element = {<Women/>}/>
           <Route path='/kids' element = {<Kids/>}/>
-          <Route path='/cartUI' element = {<CartUI/>}/>
         </Routes>
       </BrowserRouter>
     </div>
