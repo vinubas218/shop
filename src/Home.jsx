@@ -26,7 +26,7 @@ const Home = () => {
           </nav>
         </div>
         <div className='head-item'>
-          <Link to={'/Signin'} className='lnks'>Signin</Link>
+          <Link to={'/Signin'} className='links'>Signin</Link>
          
         </div>
       </div>

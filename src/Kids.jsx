@@ -152,7 +152,7 @@ const Kids = () => {
                         <p onClick={() => subOne(index)} className='add-sub'>-</p>
                         <p className='add-sub'>{count[index]}</p>
                         <p onClick={() => addOne(index)} className='add-sub'>+</p>
-                        <Link to={'/Signin'} className='link'>BUY</Link>
+                        <Link to={'/Signin'} className='lik'>BUY</Link>
                         <div className='del-btn'>
                           <p onClick={() => delButton(item.id)}> <RiDeleteBin6Line /></p>
                         </div>

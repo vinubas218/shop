@@ -152,7 +152,7 @@ const Women = () => {
                         <p onClick={() => subOne(index)} className='add-sub'>-</p>
                         <p className='add-sub'>{count[index]}</p>
                         <p onClick={() => addOne(index)} className='add-sub'>+</p>
-                        <Link to='/signin' className='link' >BUY</Link>
+                        <Link to='/signin' className='lik' >BUY</Link>
                         <div className='del-btn'>
                           <p onClick={() => delItem(item.id)}>
                             <RiDeleteBin6Line />
