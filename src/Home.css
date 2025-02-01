@@ -151,3 +151,39 @@
     font-size: 15px;
    background-color: rgb(167, 179, 175);
 }
+
+@media screen and (max-width: 768px) {
+  .head {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .heading{
+    padding-left: 10px;
+  }
+
+  .head-items {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .head-item {
+    padding-right: 6px;
+    padding-top: 6px;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img {
+    max-width: 50%;
+  }
+
+  .p1, .p2, .p3 {
+    font-size: 1rem;
+  }
+}
